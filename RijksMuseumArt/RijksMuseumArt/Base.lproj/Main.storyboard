@@ -42,7 +42,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="Smc-tw-vKK"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Login"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
@@ -107,16 +107,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cXN-h2-8IO">
-                                <rect key="frame" x="52" y="232" width="270" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cXN-h2-8IO">
+                                <rect key="frame" x="54" y="236.5" width="267" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aof-fh-fne">
-                                <rect key="frame" x="52" y="270" width="270" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aof-fh-fne">
+                                <rect key="frame" x="54" y="276.5" width="267" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -127,11 +125,51 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMv-Xg-afA">
+                                <rect key="frame" x="54" y="322.5" width="21" height="22"/>
+                                <state key="normal" image="UncheckedBox">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" image="CheckedBox"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I agree with Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-vA-Lfr">
+                                <rect key="frame" x="86" y="325.5" width="206" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldA-JP-Xqu">
+                                <rect key="frame" x="54" y="360" width="150" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="a70-HP-Cf1"/>
+                                </constraints>
+                                <state key="normal" title="Register"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="x4f-kh-dPC" firstAttribute="trailing" secondItem="aof-fh-fne" secondAttribute="trailing" constant="54" id="5s9-JM-aG2"/>
+                            <constraint firstItem="cXN-h2-8IO" firstAttribute="centerX" secondItem="3Lu-yZ-QtP" secondAttribute="centerX" id="5zc-b6-poe"/>
+                            <constraint firstItem="ldA-JP-Xqu" firstAttribute="leading" secondItem="BMv-Xg-afA" secondAttribute="leading" id="GrC-Ti-746"/>
+                            <constraint firstItem="eEI-vA-Lfr" firstAttribute="centerY" secondItem="BMv-Xg-afA" secondAttribute="centerY" id="OsI-Cg-cgd"/>
+                            <constraint firstItem="aof-fh-fne" firstAttribute="leading" secondItem="x4f-kh-dPC" secondAttribute="leading" constant="54" id="VVQ-h5-n0W"/>
+                            <constraint firstItem="aof-fh-fne" firstAttribute="top" secondItem="cXN-h2-8IO" secondAttribute="bottom" constant="10" id="YIB-AL-z3Y"/>
+                            <constraint firstItem="ldA-JP-Xqu" firstAttribute="top" secondItem="BMv-Xg-afA" secondAttribute="bottom" constant="16" id="auM-of-zBZ"/>
+                            <constraint firstItem="BMv-Xg-afA" firstAttribute="centerY" secondItem="3Lu-yZ-QtP" secondAttribute="centerY" id="eIn-rR-KHR"/>
+                            <constraint firstItem="BMv-Xg-afA" firstAttribute="leading" secondItem="aof-fh-fne" secondAttribute="leading" id="fXs-95-OFC"/>
                             <constraint firstItem="rHM-00-SkK" firstAttribute="centerX" secondItem="3Lu-yZ-QtP" secondAttribute="centerX" id="nHs-l5-QWA"/>
+                            <constraint firstItem="BMv-Xg-afA" firstAttribute="top" secondItem="aof-fh-fne" secondAttribute="bottom" constant="16" id="nNr-cT-ex8"/>
+                            <constraint firstItem="x4f-kh-dPC" firstAttribute="trailing" secondItem="cXN-h2-8IO" secondAttribute="trailing" constant="54" id="qc5-oq-XcU"/>
+                            <constraint firstItem="eEI-vA-Lfr" firstAttribute="leading" secondItem="BMv-Xg-afA" secondAttribute="trailing" constant="11" id="qhz-SJ-49g"/>
                             <constraint firstItem="rHM-00-SkK" firstAttribute="top" secondItem="x4f-kh-dPC" secondAttribute="top" constant="54" id="r0i-6W-lQ6"/>
+                            <constraint firstItem="aof-fh-fne" firstAttribute="centerX" secondItem="3Lu-yZ-QtP" secondAttribute="centerX" id="uwb-uT-f8n"/>
+                            <constraint firstItem="cXN-h2-8IO" firstAttribute="leading" secondItem="x4f-kh-dPC" secondAttribute="leading" constant="54" id="ynJ-11-N92"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="x4f-kh-dPC"/>
                     </view>
@@ -157,4 +195,8 @@
             <point key="canvasLocation" x="-58" y="5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CheckedBox" width="21" height="21"/>
+        <image name="UncheckedBox" width="21" height="21"/>
+    </resources>
 </document>
