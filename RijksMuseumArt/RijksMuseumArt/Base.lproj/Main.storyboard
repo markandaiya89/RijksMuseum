@@ -29,12 +29,18 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="3Z4-d6-Kl6" id="PwE-S6-FCE"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v16-bR-2b5">
                                 <rect key="frame" x="54" y="271" width="267" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="3Z4-d6-Kl6" id="XZY-VX-jtD"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaR-up-ych">
                                 <rect key="frame" x="171" y="317" width="150" height="34"/>
@@ -48,6 +54,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginTapped:" destination="3Z4-d6-Kl6" eventType="touchUpInside" id="cMI-qz-uhS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-If-qRI">
                                 <rect key="frame" x="158" y="359" width="163" height="25"/>
@@ -94,6 +103,10 @@
                         <viewLayoutGuide key="safeArea" id="7Pz-MA-4WM"/>
                     </view>
                     <navigationItem key="navigationItem" title="Rijks Museum Of Art" id="Hkk-RN-I54"/>
+                    <connections>
+                        <outlet property="txtFldPassword" destination="v16-bR-2b5" id="xAl-Cp-FsE"/>
+                        <outlet property="txtFldUsername" destination="y7e-Vq-aEg" id="8Nc-Fb-OAF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="26b-LY-c8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

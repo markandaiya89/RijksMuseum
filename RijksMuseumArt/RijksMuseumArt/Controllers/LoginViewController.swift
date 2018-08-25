@@ -9,7 +9,9 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    @IBOutlet weak var txtFldUsername: UITextField!
+    @IBOutlet weak var txtFldPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +33,7 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func loginTapped(_ sender: UIButton) {
+    }
+    
 }
