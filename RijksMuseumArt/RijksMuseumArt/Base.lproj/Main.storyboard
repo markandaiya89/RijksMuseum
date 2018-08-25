@@ -55,7 +55,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="loginTapped:" destination="3Z4-d6-Kl6" eventType="touchUpInside" id="cMI-qz-uhS"/>
+                                    <action selector="loginTapped:" destination="3Z4-d6-Kl6" eventType="touchUpInside" id="5MQ-Zx-Buz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-If-qRI">
@@ -112,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="656.79999999999995" y="4.9475262368815596"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="YgU-e7-s4Q">
             <objects>
-                <viewController id="sNX-EA-ic8" sceneMemberID="viewController">
+                <viewController id="sNX-EA-ic8" customClass="RegisterViewController" customModule="RijksMuseumArt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Lu-yZ-QtP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,6 +144,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <state key="selected" image="CheckedBox"/>
+                                <connections>
+                                    <action selector="termsTapped:" destination="sNX-EA-ic8" eventType="touchUpInside" id="p1j-0b-0NJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I agree with Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-vA-Lfr">
                                 <rect key="frame" x="86" y="325.5" width="206" height="16"/>
@@ -163,6 +166,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerTapped:" destination="sNX-EA-ic8" eventType="touchUpInside" id="a5c-aU-3lZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -186,6 +192,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="x4f-kh-dPC"/>
                     </view>
+                    <connections>
+                        <outlet property="btnTerms" destination="BMv-Xg-afA" id="Fk4-z4-Ff2"/>
+                        <outlet property="txtFldPassword" destination="aof-fh-fne" id="FW5-da-u6P"/>
+                        <outlet property="txtFldUserName" destination="cXN-h2-8IO" id="hBV-aC-cuL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7oS-DU-iGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

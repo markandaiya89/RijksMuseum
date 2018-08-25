@@ -34,6 +34,17 @@ class LoginViewController: UIViewController {
     }
     */
     @IBAction func loginTapped(_ sender: UIButton) {
+        if (!(txtFldUsername.text?.isValidString() ?? false)) {
+            // if username is empty
+            showAlert(on: self , with: "Error", and:userNameEmpty)
+        }
+        else if (!(txtFldPassword.text?.isValidString() ?? false)) {
+            // if password is empty
+            showAlert(on: self, with: "Error", and: passwordEmpty)
+        }
+        else {
+            // if data is valid call login api
+        }
     }
     
 }

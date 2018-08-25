@@ -14,6 +14,8 @@
 		8111D128213125A900BE9054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8111D126213125A900BE9054 /* LaunchScreen.storyboard */; };
 		8111D1312131266E00BE9054 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111D1302131266E00BE9054 /* LoginViewController.swift */; };
 		8111D133213137D500BE9054 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111D132213137D500BE9054 /* RegisterViewController.swift */; };
+		8111D13621313D5D00BE9054 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111D13521313D5C00BE9054 /* StringExtensions.swift */; };
+		8111D13821313FAD00BE9054 /* RMAUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111D13721313FAD00BE9054 /* RMAUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		8111D129213125A900BE9054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8111D1302131266E00BE9054 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8111D132213137D500BE9054 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8111D13521313D5C00BE9054 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		8111D13721313FAD00BE9054 /* RMAUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMAUtilities.swift; sourceTree = "<group>"; };
 		8B300515DEDA85B6D525712A /* Pods-RijksMuseumArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RijksMuseumArt.release.xcconfig"; path = "Pods/Target Support Files/Pods-RijksMuseumArt/Pods-RijksMuseumArt.release.xcconfig"; sourceTree = "<group>"; };
 		8BAA24489C3F7B46426BB864 /* Pods_RijksMuseumArt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RijksMuseumArt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +67,7 @@
 		8111D11C213125A700BE9054 /* RijksMuseumArt */ = {
 			isa = PBXGroup;
 			children = (
+				8111D13421313C9C00BE9054 /* Utilities */,
 				8111D12F2131264D00BE9054 /* Controllers */,
 				8111D11D213125A800BE9054 /* AppDelegate.swift */,
 				8111D121213125A800BE9054 /* Main.storyboard */,
@@ -80,6 +85,15 @@
 				8111D132213137D500BE9054 /* RegisterViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8111D13421313C9C00BE9054 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8111D13521313D5C00BE9054 /* StringExtensions.swift */,
+				8111D13721313FAD00BE9054 /* RMAUtilities.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		CA1DF5E8FE896B69B1704816 /* Pods */ = {
@@ -211,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8111D13621313D5D00BE9054 /* StringExtensions.swift in Sources */,
 				8111D133213137D500BE9054 /* RegisterViewController.swift in Sources */,
 				8111D1312131266E00BE9054 /* LoginViewController.swift in Sources */,
+				8111D13821313FAD00BE9054 /* RMAUtilities.swift in Sources */,
 				8111D11E213125A800BE9054 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,7 +377,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3P28X54BR3;
 				INFOPLIST_FILE = RijksMuseumArt/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.falconet.RijksMuseumArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -377,7 +396,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3P28X54BR3;
 				INFOPLIST_FILE = RijksMuseumArt/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.falconet.RijksMuseumArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
