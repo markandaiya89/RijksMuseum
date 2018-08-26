@@ -12,7 +12,7 @@ class CollectionCaller:NSObject {
     var pageNumber = 0
     var arrayList:[Art] = []
     
-    func getArtList(completion:rnBlankComplition)->Void{
+    func getArtList(completion:@escaping rnBlankComplition)->Void{
        // gets list of art collections from server
         let url = "https://www.rijksmuseum.nl/api/en/collection?key=4NniIOvP&format=json&imgonly=True&p=\(pageNumber)&ps=20"
         let headers = RNApiSupport.getHeaderForApiCall(headers: [:])
@@ -24,6 +24,7 @@ class CollectionCaller:NSObject {
                     let decoder = JSONDecoder()
                     let collection:Collection = try decoder.decode(Collection.self, from: resposneData)
                     self.arrayList.append(contentsOf: collection.artObjects)
+                    completion()
                     dlPrint(object: self.arrayList)
                 }
                 catch let jsonError {
@@ -50,6 +51,7 @@ struct Collection: Decodable {
 struct Art:Decodable {
     var id:String
     var title:String
+    var longTitle:String
     var webImage:imageModal
     var headerImage:imageModal
 }

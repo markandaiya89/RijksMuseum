@@ -10,6 +10,9 @@ import UIKit
 
 class ArtTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var lblArtName: UILabel!
+    @IBOutlet weak var artImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
