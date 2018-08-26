@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		18A20C6C45FF616E6C16D583 /* Pods_RijksMuseumArt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAA24489C3F7B46426BB864 /* Pods_RijksMuseumArt.framework */; };
+		81082863213282F900C37BCF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81082862213282F900C37BCF /* HomeViewController.swift */; };
+		810828652132830A00C37BCF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810828642132830A00C37BCF /* ProfileViewController.swift */; };
+		8108286B2132A91800C37BCF /* RNAPISupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8108286A2132A91800C37BCF /* RNAPISupport.swift */; };
+		8108286E2132C6E500C37BCF /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8108286D2132C6E500C37BCF /* Collection.swift */; };
+		81082871213300A900C37BCF /* ArtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81082870213300A900C37BCF /* ArtTableViewCell.swift */; };
 		8111D11E213125A800BE9054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111D11D213125A800BE9054 /* AppDelegate.swift */; };
 		8111D123213125A800BE9054 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8111D121213125A800BE9054 /* Main.storyboard */; };
 		8111D125213125A900BE9054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8111D124213125A900BE9054 /* Assets.xcassets */; };
@@ -16,10 +21,20 @@
 		8111D133213137D500BE9054 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111D132213137D500BE9054 /* RegisterViewController.swift */; };
 		8111D13621313D5D00BE9054 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111D13521313D5C00BE9054 /* StringExtensions.swift */; };
 		8111D13821313FAD00BE9054 /* RMAUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111D13721313FAD00BE9054 /* RMAUtilities.swift */; };
+		8111D13A21319F2D00BE9054 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111D13921319F2D00BE9054 /* SideMenuViewController.swift */; };
+		8111D13D2131A11F00BE9054 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111D13C2131A11F00BE9054 /* ProfileTableViewCell.swift */; };
+		8111D13F2131A1CD00BE9054 /* ViewNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111D13E2131A1CD00BE9054 /* ViewNameTableViewCell.swift */; };
+		8111D1412131AC2300BE9054 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111D1402131AC2300BE9054 /* MainViewController.swift */; };
+		8111D1452131B87900BE9054 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111D1442131B87900BE9054 /* ContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0AD0483C0F907416D183714E /* Pods-RijksMuseumArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RijksMuseumArt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RijksMuseumArt/Pods-RijksMuseumArt.debug.xcconfig"; sourceTree = "<group>"; };
+		81082862213282F900C37BCF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		810828642132830A00C37BCF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8108286A2132A91800C37BCF /* RNAPISupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNAPISupport.swift; sourceTree = "<group>"; };
+		8108286D2132C6E500C37BCF /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		81082870213300A900C37BCF /* ArtTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtTableViewCell.swift; sourceTree = "<group>"; };
 		8111D11A213125A700BE9054 /* RijksMuseumArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RijksMuseumArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8111D11D213125A800BE9054 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8111D122213125A800BE9054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +45,11 @@
 		8111D132213137D500BE9054 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8111D13521313D5C00BE9054 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		8111D13721313FAD00BE9054 /* RMAUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMAUtilities.swift; sourceTree = "<group>"; };
+		8111D13921319F2D00BE9054 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		8111D13C2131A11F00BE9054 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		8111D13E2131A1CD00BE9054 /* ViewNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNameTableViewCell.swift; sourceTree = "<group>"; };
+		8111D1402131AC2300BE9054 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8111D1442131B87900BE9054 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		8B300515DEDA85B6D525712A /* Pods-RijksMuseumArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RijksMuseumArt.release.xcconfig"; path = "Pods/Target Support Files/Pods-RijksMuseumArt/Pods-RijksMuseumArt.release.xcconfig"; sourceTree = "<group>"; };
 		8BAA24489C3F7B46426BB864 /* Pods_RijksMuseumArt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RijksMuseumArt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -46,6 +66,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		810828682132A4E300C37BCF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8108286F2133008200C37BCF /* View */,
+				8108286C2132C6BE00C37BCF /* Modal */,
+				810828692132A4F000C37BCF /* Controllers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		810828692132A4F000C37BCF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				81082862213282F900C37BCF /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8108286C2132C6BE00C37BCF /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				8108286D2132C6E500C37BCF /* Collection.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		8108286F2133008200C37BCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81082870213300A900C37BCF /* ArtTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8111D111213125A700BE9054 = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +121,9 @@
 		8111D11C213125A700BE9054 /* RijksMuseumArt */ = {
 			isa = PBXGroup;
 			children = (
+				8111D1432131B85900BE9054 /* ContainerControllers */,
 				8111D13421313C9C00BE9054 /* Utilities */,
+				8111D13B2131A0F900BE9054 /* Views */,
 				8111D12F2131264D00BE9054 /* Controllers */,
 				8111D11D213125A800BE9054 /* AppDelegate.swift */,
 				8111D121213125A800BE9054 /* Main.storyboard */,
@@ -83,6 +139,8 @@
 			children = (
 				8111D1302131266E00BE9054 /* LoginViewController.swift */,
 				8111D132213137D500BE9054 /* RegisterViewController.swift */,
+				8111D13921319F2D00BE9054 /* SideMenuViewController.swift */,
+				8111D1402131AC2300BE9054 /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -90,10 +148,30 @@
 		8111D13421313C9C00BE9054 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8108286A2132A91800C37BCF /* RNAPISupport.swift */,
 				8111D13521313D5C00BE9054 /* StringExtensions.swift */,
 				8111D13721313FAD00BE9054 /* RMAUtilities.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8111D13B2131A0F900BE9054 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8111D13C2131A11F00BE9054 /* ProfileTableViewCell.swift */,
+				8111D13E2131A1CD00BE9054 /* ViewNameTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8111D1432131B85900BE9054 /* ContainerControllers */ = {
+			isa = PBXGroup;
+			children = (
+				810828682132A4E300C37BCF /* Home */,
+				8111D1442131B87900BE9054 /* ContainerViewController.swift */,
+				810828642132830A00C37BCF /* ProfileViewController.swift */,
+			);
+			path = ContainerControllers;
 			sourceTree = "<group>";
 		};
 		CA1DF5E8FE896B69B1704816 /* Pods */ = {
@@ -226,10 +304,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				8111D13621313D5D00BE9054 /* StringExtensions.swift in Sources */,
+				8111D13D2131A11F00BE9054 /* ProfileTableViewCell.swift in Sources */,
+				8111D1452131B87900BE9054 /* ContainerViewController.swift in Sources */,
 				8111D133213137D500BE9054 /* RegisterViewController.swift in Sources */,
 				8111D1312131266E00BE9054 /* LoginViewController.swift in Sources */,
+				8108286E2132C6E500C37BCF /* Collection.swift in Sources */,
 				8111D13821313FAD00BE9054 /* RMAUtilities.swift in Sources */,
+				810828652132830A00C37BCF /* ProfileViewController.swift in Sources */,
+				8108286B2132A91800C37BCF /* RNAPISupport.swift in Sources */,
+				8111D13F2131A1CD00BE9054 /* ViewNameTableViewCell.swift in Sources */,
+				81082863213282F900C37BCF /* HomeViewController.swift in Sources */,
+				8111D1412131AC2300BE9054 /* MainViewController.swift in Sources */,
+				8111D13A21319F2D00BE9054 /* SideMenuViewController.swift in Sources */,
 				8111D11E213125A800BE9054 /* AppDelegate.swift in Sources */,
+				81082871213300A900C37BCF /* ArtTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

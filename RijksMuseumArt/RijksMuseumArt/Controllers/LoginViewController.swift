@@ -14,6 +14,12 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let _ = getCurrentUser(){
+            delayOnMainThread(delay: 0.5) {
+              self.performSegue(withIdentifier: "toMainView", sender: self)
+            }
+            
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -44,6 +50,16 @@ class LoginViewController: UIViewController {
         }
         else {
             // if data is valid call login api
+            let userData:[String:String] = [userName:txtFldUsername.text!,password:txtFldPassword.text!]
+            let loggedIn = verifyUserData(user: userData)
+            if loggedIn {
+                // user is logged in take to home page.
+                saveCurrentUser(user: userData)
+                performSegue(withIdentifier: "toMainView", sender: self)
+            }
+            else{
+              showAlert(on: self, with: "Error", and: authenticationFailure)
+            }
         }
     }
     

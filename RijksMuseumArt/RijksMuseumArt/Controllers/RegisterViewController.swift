@@ -34,6 +34,12 @@ class RegisterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func goBack(_ sender: Any) {
+        self.dismiss(animated: true) {
+            
+        }
+    }
     @IBAction func termsTapped(_ sender: UIButton) {
         btnTerms.isSelected = !btnTerms.isSelected
     }
@@ -52,7 +58,16 @@ class RegisterViewController: UIViewController {
             showAlert(on: self, with: "Error", and: checkBoxFailure)
         }
         else{
-            // call register api 
+            // call register api
+            let userData:[String:String] = [userName:txtFldUserName.text!,password:txtFldPassword.text!]
+            let dataSaved = saveUserData(userData: userData)
+            if !dataSaved{
+                showAlert(on: self, with: "Error", and: userExists)
+            }
+            else {
+                self.navigationController?.popViewController(animated: true)
+            }
+            
         }
     }
 }

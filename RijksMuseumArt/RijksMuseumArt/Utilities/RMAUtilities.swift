@@ -10,10 +10,18 @@ import Foundation
 import UIKit
 
 typealias rnBlankComplition = () -> ()
+
+// auth related static strings
 let userNameEmpty = "Username should not be empty"
 let passwordEmpty = "Password should not be empty"
 let authenticationFailure = "Authentication failed"
 let checkBoxFailure = "Checkbox should be check"
+let userExists = "User already exist"
+let viewNames = ["Home", "Profile"]
+
+// user related static strings
+let userName = "userName"
+let password = "password"
 
 public func dlPrint<Template>(object:  @autoclosure () -> Template,  file: String = #file,  functionName: String = #function, lineNum: Int = #line)
 {
@@ -87,14 +95,58 @@ func dispatchOnQueue(withId:Int, clousre: @escaping rnBlankComplition) {
 
 //MARK: userdefaults
 
-func saveAccessToken(token:String , userId:Int, userType:String)
-{
-   
+func saveUserData(userData:[String:String])->Bool{
+    if var users = getAllUsers() {
+        if !users.contains{ $0[userName] == userData[userName]! } {
+            users.append(userData)
+            saveAllUsers(users: users)
+            
+        }
+        else {
+         return false
+        }
+    }
+    else {
+        var users:[[String:String]] = [[:]]
+        users.append(userData)
+        saveAllUsers(users: users)
+    }
+    return true
+}
+func saveAllUsers(users:[[String:String]])->Void{
+    UserDefaults.standard.set(users, forKey: "allUsers")
 }
 
-func setSessionId()
+
+func verifyUserData(user:[String:String])->Bool{
+    if let users = getAllUsers() {
+        if users.contains(where: { $0 == user }) {
+           return true
+        }
+        else {
+            return false
+        }
+    }
+    return false
+}
+func getAllUsers() -> [[String:String]]? {
+    return  UserDefaults.standard.array(forKey: "allUsers") as? [[String:String]]
+}
+func saveCurrentUser(user:[String:String]){
+    UserDefaults.standard.set(user, forKey: "currentUser")
+}
+func getCurrentUser()->[String:String]?{
+    return UserDefaults.standard.value(forKey: "currentUser") as? [String:String]
+}
+
+func saveAccessToken(token:String , userId:Int, userType:String)
 {
     
+}
+
+func clearCurrentUser()
+{
+    UserDefaults.standard.removeObject(forKey: "currentUser")
 }
 
 func clearUserDetailsForLogout()

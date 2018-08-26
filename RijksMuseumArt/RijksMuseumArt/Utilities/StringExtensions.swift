@@ -1,12 +1,10 @@
 //  StringExtensions.swift
-//  Ranker
+//  RijksMuseumArt
 //
 //  Created by Markandaiya Harsha on 25/08/18.
 //  Copyright © 2018 markandaiya. All rights reserved.
 //
 
-
-// 4NniIOvP api key
 
 
 import Foundation
