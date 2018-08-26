@@ -65,7 +65,9 @@ class RegisterViewController: UIViewController {
                 showAlert(on: self, with: "Error", and: userExists)
             }
             else {
-                self.navigationController?.popViewController(animated: true)
+                self.dismiss(animated: true) {
+                    
+                }
             }
             
         }
