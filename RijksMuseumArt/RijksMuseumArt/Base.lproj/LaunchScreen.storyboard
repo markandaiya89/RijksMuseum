@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art In Rijks Museum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5v-4T-yuc">
-                                <rect key="frame" x="87" y="321" width="203" height="25.5"/>
+                                <rect key="frame" x="86" y="321" width="203" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
-                                <color key="textColor" red="0.72156862749999995" green="0.08235294118" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.1058823529" green="0.38431372549999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.82014052120000003" green="0.90702445330000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.9906945721388889" green="1" blue="0.98211773641944455" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="R5v-4T-yuc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9Q1-yv-2jl"/>
                             <constraint firstItem="R5v-4T-yuc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Sal-ed-UxQ"/>
